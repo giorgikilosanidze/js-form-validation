@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src="https://kit.fontawesome.com/177e845bfd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-moon"></i>
+        <form name="form">
+            <i class="fa-solid fa-paper-plane"></i>
+            <div class="input_div">
+                <label for="fullName">Full Name</label>
+                <input type="text" name="fullName" placeholder="Enter your name" class="input_field name">
+                <p class="name_error">Full name is required</p>
+            </div>
+            <div class="input_div">
+                <label for="phone">Phone No.</label>
+                <input type="tel" name="phone" placeholder="123 456 7890" class="input_field phone">
+                <p class="phone_error">Phone no is required</p>
+            </div>
+            <div class="input_div">
+                <label for="email">Email Id.</label>
+                <input type="email" name="email" placeholder="Enter email" class="input_field email">
+                <p class="email_error">Email is required</p>
+            </div>
+            <div class="input_div">
+                <label for="">Your Message</label>
+                <textarea name="message" placeholder="Enter your message"></textarea>
+                <p class="textarea_error">Message is required</p>
+            </div>
+            <input type="submit" value="Submit" class="button">
+            <p class="validation_error">Please fix the error.</p>
+        </form>
+    </div>
+</body>
+
+</html>
